@@ -1,21 +1,36 @@
-# 🏈 NFL Big Data Bowl 2026 – Prediction (TTA)
+# NFL Big Data Bowl — Outcome Prediction Modeling
 
-Independent participation project for the **Kaggle: NFL Big Data Bowl 2026 – Prediction Competition**  
-by **Thousand Tech Analytics (TTA)**.
+## Overview
+This project develops machine learning models to predict play outcomes using player tracking data from the NFL Big Data Bowl dataset. The workflow focuses on transforming high-resolution spatial tracking data into structured predictive features and building end-to-end modeling pipelines for competition-style evaluation.
 
----
+## Objectives
+- Convert raw tracking and play-level data into modeling-ready datasets
+- Engineer spatial and contextual features representing player movement and positioning
+- Train and evaluate predictive models aligned with the competition evaluation metric
+- Generate reproducible submission outputs and experiment tracking
 
-## 📄 Overview
-Predict player movement (x, y) while the ball is in the air using  
-NFL Next Gen Stats tracking data.
+## Methodology
 
-**Goal:** Build a model that minimizes RMSE between predicted and actual positions.
+### Data preprocessing
+- Tracking data alignment and cleaning
+- Play-level dataset construction
+- Feature normalization and transformation
 
----
+### Feature engineering
+- Player positioning features
+- Movement-based aggregate metrics
+- Contextual play information features
 
-## ⚙️ Structure
-data/          # dataset (not included in repo)
-notebooks/     # exploratory analysis and experiments
-src/           # source code for preprocessing and models
-reports/       # figures, logs, and final results
+### Modeling
+- Baseline model development
+- Iterative model refinement and validation
+- Final model selection and submission generation
 
+## Repository Structure
+data/                # raw and processed datasets  
+notebooks/           # modeling and experimentation notebooks  
+outputs/             # prediction outputs and submission files  
+src/                 # preprocessing and modeling utilities  
+
+## Results
+Models were evaluated using the official competition metric, and final prediction outputs were generated for submission benchmarking and performance comparison.
